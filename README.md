@@ -2,7 +2,8 @@
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 # Leanne Bedeau-Rogers Portfolio
-[**Live Link** ](https://creatvie-introvert.github.io/leanne-bedeau-rogers-portfolio)
+**Live Site:** [View Portfolio](https://creatvie-introvert.github.io/leanne-bedeau-rogers-portfolio)
+
 ## Introduction
 Welcome to my portfolio! I'm Leanne Bedeau-Rogers, a front-end developer currently expanding into full-stack development. This site was created to showcase my technical skills, design sensibilities, and growing body of work.
 
@@ -188,7 +189,7 @@ This site is deployed using **GitHub Pages** directly from the `main` branch of 
 5. Click **Save** — GitHub will build and deploy your site.
 6. The live site will be available shortly at:
 
-[**Live Link**](https://creatvie-introvert.github.io/leanne-bedeau-rogers-portfolio)
+**Live Site:** [View Portfolio](https://creatvie-introvert.github.io/leanne-bedeau-rogers-portfolio)
 
 > Note: Deployment may take a few minutes to reflect changes after each push.
 
@@ -196,6 +197,10 @@ This site is deployed using **GitHub Pages** directly from the `main` branch of 
 ### Content
 ### Media
 ### Acknowledgements
+
+## Contact
+
+For collaboration, freelance inquiries, or questions, feel free to reach out via [LinkedIn](https://www.linkedin.com/feed/) or [email](mailto:lrogers1986@hotmail.com).
 
 
 
