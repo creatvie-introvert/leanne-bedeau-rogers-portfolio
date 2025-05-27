@@ -54,3 +54,35 @@ h1, h2, h3, h4, h5, h6 {
 #root, #__next {
     isolation: isolate;
 }
+
+/* ====================
+   2. Variables (Custom Properties)
+==================== */
+
+:root {
+    /* Colour Variables */
+    --clr-bg: #000000;
+    --clr-text: #ffffff;
+    --clr-accent: #8890FF;
+    --clr-secondary-text: #CED0CE;
+    --clr-card-bg: #393D47;
+    --clr-border: #2C2C2C;
+    --clr-inactive: #767676;
+    --clr-hover: #4B53C2;
+    --clr-active: #7C83F0;
+    --clr-shadow: rgba(136, 144, 255, 0.25);
+
+    /* Typography Variables */
+    --font-heading: 'Archivo', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Spacing and sizing variables */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
+
+    --max-width: 1200px;
+    --border-radius: 0.5rem;
+}
