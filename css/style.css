@@ -1,0 +1,56 @@
+/* ====================
+   1. CSS Reset
+==================== */
+
+/* Intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Enable keyboard animations */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    line-height: 1.5;   /* Add accessible line height */
+    -webkit-font-smoothing: antialiased;    /* Improve text rendering */
+}
+
+/* Improve media defaults */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Inherit fonts for form controls */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* Avoid text overlays */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+/* Create root stacking context */
+#root, #__next {
+    isolation: isolate;
+}
