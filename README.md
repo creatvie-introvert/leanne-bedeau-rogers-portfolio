@@ -1,4 +1,8 @@
+![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 # Leanne Bedeau-Rogers Portfolio
+[**Live Link** ](https://creatvie-introvert.github.io/leanne-bedeau-rogers-portfolio)
 ## Introduction
 Welcome to my portfolio! I'm Leanne Bedeau-Rogers, a front-end developer currently expanding into full-stack development. This site was created to showcase my technical skills, design sensibilities, and growing body of work.
 
@@ -31,6 +35,7 @@ As I continue to develop my skills, the site will evolve to reflect new technolo
 
 ## User Experience (UX)
 The portfolio site is designed with a user-first mindset, ensuring smooth navigation, responsive design, and accessible content across all devices. It focuses on clarity, speed, and simplicity — making it easy for potential clients, employers, and collaborators to explore my work and get in touch.
+
 ### User Stories
 As a freelance client:
 - I want to view examples of past work so I can assess the developer's skills.
@@ -53,8 +58,8 @@ As the developer (site owner):
 
 ## Design
 The visual design of this portfolio site reflects a balance between professionalism and creativity. It uses a dark, minimalist aesthetic with subtle green accents to convey focus, modernity, and individuality. The layout is clean, mobile-first, and optimised for legibility and user flow. Each design choice is intentional — guiding users toward key sections like projects and contact without overwhelming them.
-### Colour Scheme
 
+### Colour Scheme
 The portfolio uses a bold, dark theme accented by a vibrant periwinkle blue. This palette balances high contrast for readability with a modern, tech-forward aesthetic. It ensures visual clarity, consistency, and strong focus on key interactive elements like buttons and links.
 
 The colour palette was selected using [Coolors](https://coolors.co/), and refined based on accessibility testing with [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/).
@@ -75,7 +80,6 @@ The colour palette was selected using [Coolors](https://coolors.co/), and refine
 This palette supports a visually cohesive experience within a dark interface, ensuring high contrast, clear hierarchy, and strong visual focus on interactive components. All colours were selected with accessibility and brand consistency in mind.
 
 ### Typography
-
 The site uses a clean, modern type pairing to support readability, visual hierarchy, and consistency across devices.
 
 - **Headers:** Archivo — a bold, geometric sans-serif font that gives the layout structure and impact.
@@ -158,7 +162,6 @@ These features are not part of the initial launch but are planned for future ite
   Add backend-powered features such as a project submission form or CMS integration to reflect your full-stack capabilities as they develop.
 
 ## Technologies Used
-
 - HTML5
 - CSS3
 - JavaScript (Vanilla)
@@ -175,6 +178,19 @@ These features are not part of the initial launch but are planned for future ite
 ### Unfixed Bugs
 
 ## Deployment
+This site is deployed using **GitHub Pages** directly from the `main` branch of this repository.
+
+### 🔧 Deployment Steps
+1. Ensure the `index.html` file is located in the root directory of the `main` branch.
+2. Go to the repository on GitHub.
+3. Navigate to **Settings > Pages**.
+4. Under **Source**, select the `main` branch and root (`/`) folder.
+5. Click **Save** — GitHub will build and deploy your site.
+6. The live site will be available shortly at:
+
+[**Live Link**](https://creatvie-introvert.github.io/leanne-bedeau-rogers-portfolio)
+
+> Note: Deployment may take a few minutes to reflect changes after each push.
 
 ## Credits
 ### Content
