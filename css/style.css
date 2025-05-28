@@ -169,7 +169,7 @@ img {
 }
 
 button {
-    font-style: inherit;
+    font: inherit;
     cursor: pointer;
 }
 
