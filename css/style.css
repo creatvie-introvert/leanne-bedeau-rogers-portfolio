@@ -244,3 +244,19 @@ header {
     border-radius: var(--border-radius);
     z-index: 100;
 }
+
+/* Nav item styles */
+#main-nav a {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+#main-nav li {
+    margin: 0.8rem 0;
+    padding: 0.5rem;
+}
+
+.active {
+    color: var(--clr-active);
+}
