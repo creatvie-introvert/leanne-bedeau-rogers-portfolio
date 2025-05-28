@@ -34,6 +34,8 @@ img, picture, video, canvas, svg {
 /* Inherit fonts for form controls */
 input, button, textarea, select {
     font: inherit;
+    color: inherit;
+    background: none;
 }
 
 /* Avoid text overlays */
@@ -85,4 +87,122 @@ h1, h2, h3, h4, h5, h6 {
 
     --max-width: 1200px;
     --border-radius: 0.5rem;
+}
+
+/* ====================
+   3. Global Styles
+   - Base typography
+   - Links
+   - Lists, buttons, images
+==================== */
+
+html, body {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: var(--clr-bg);
+    color: var(--clr-text);
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+}
+
+h1, h2, h3 { 
+    line-height: 1.2;
+}
+
+h4, h5, h6 {
+    line-height: 1.4;
+}
+
+h1 { font-size: 2.5rem; }  /* 40px */
+
+h2 { 
+    font-size: 2.25rem;    /* 36px */
+    margin: 2rem 0 1rem;
+} 
+
+h3 { font-size: 2rem; }    /* 32px */
+
+h4 { font-size: 1.5rem; }  /* 24px */
+
+h5 { font-size: 1.25rem; } /* 20px */
+
+h6 { font-size: 1.125rem; } /* 18px */
+
+p {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+strong { font-weight: 600; }
+
+em { font-style: italic; }
+
+a {
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: var(--clr-hover);
+    cursor: pointer;
+}
+
+a:focus {
+    text-decoration: underline;
+    outline: 2px solid var(--clr-accent);
+    outline-offset: 4px;
+}
+
+ul, ol, li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    font-style: inherit;
+    cursor: pointer;
+}
+
+input, textarea, select {
+    border: 1px solid var(--clr-card-bg);
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    color: var(--clr-text);
+    outline: none;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 2px solid var(--clr-accent);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
