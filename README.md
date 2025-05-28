@@ -70,7 +70,7 @@ The colour palette was selected using [Coolors](https://coolors.co/), and refine
 | Background            | Black            | `#000000`  |
 | Primary Text          | White            | `#FFFFFF`  |
 | Accent / Buttons      | Light Blue-Violet| `#8890FF`  |
-| Card Backgrounds      | Charcoal         | `#393D47`  |
+| Card Backgrounds      | Dark Gray         | `#1D1D1D`  |
 | Secondary Text        | Cool Gray         | `#CED0CE`  |
 | Borders               | Deep Gray         | `#2C2C2C`  |
 | Hover Effects         | Indigo            | `#4B53C2`  |
