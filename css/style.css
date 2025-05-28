@@ -216,11 +216,12 @@ input:focus, textarea:focus, select:focus {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 16px;
 }
 
 /* Nav bar logo styles */
-#logo {
+.logo {
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.2;

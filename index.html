@@ -36,15 +36,15 @@
 
 <body>
     <!-- Header -->
-     <header>
+    <header>
         <!-- Full name logo on left -->
-        <h1 id="logo">
+        <h1 class="logo">
             <a href="index.html">Leanne Bedeau-Rogers</a>
         </h1>
 
-        <!-- Hamburger menu on right -->
-        <nav>
-            <ul>
+        <!-- Navigation items -->
+        <nav id="main-nav" aria-label="Main navigation">
+            <ul class="nav-bar">
                 <li>
                     <a href="index.html" class="active">Home</a>
                 </li>
@@ -64,11 +64,15 @@
                     <a href="contact.html">Contact</a>
                 </li>
                 <li>
-                    <a href="assets/cv/front-end-developer-cv.pdf" download="My-CV">Download CV</a>
+                    <a href="assets/cv/front-end-developer-cv.pdf" download="My-CV" aria-label="Download my CV in PDF format">Download CV</a>
                 </li>
             </ul>
         </nav>
-     </header>
+
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
 
     <!-- Hero section -->
 
