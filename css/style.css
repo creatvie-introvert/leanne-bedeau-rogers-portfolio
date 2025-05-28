@@ -145,6 +145,7 @@ em { font-style: italic; }
 
 a {
     text-decoration: none;
+    color: var(--clr-text);
     transition: all 0.2s ease;
 }
 
