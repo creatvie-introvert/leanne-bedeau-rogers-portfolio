@@ -207,3 +207,21 @@ input:focus, textarea:focus, select:focus {
     white-space: nowrap;
     border: 0;
 }
+
+/* ====================
+   4. Header Styles
+==================== */
+
+/* Header layout */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+/* Nav bar logo styles */
+#logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
