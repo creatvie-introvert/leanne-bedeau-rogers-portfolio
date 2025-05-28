@@ -234,4 +234,13 @@ header {
 
 .nav-bar.open {
     display: block;
+    /* Set nav bar position */
+    position: absolute;
+    top: 60px;
+    left: 16px;
+    right: 16px;
+    background-color: var(--clr-card-bg);
+    padding: 16px;
+    border-radius: var(--border-radius);
+    z-index: 100;
 }
