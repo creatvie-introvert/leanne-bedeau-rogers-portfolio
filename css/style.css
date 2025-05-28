@@ -232,6 +232,6 @@ header {
     display: none;
 }
 
-.nav-bar .open {
+.nav-bar.open {
     display: block;
 }
