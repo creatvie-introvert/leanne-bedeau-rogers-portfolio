@@ -226,3 +226,12 @@ header {
     font-weight: 700;
     line-height: 1.2;
 }
+
+/* Hide nav bar by default */
+.nav-bar {
+    display: none;
+}
+
+.nav-bar .open {
+    display: block;
+}
