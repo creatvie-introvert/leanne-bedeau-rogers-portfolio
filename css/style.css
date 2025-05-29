@@ -260,3 +260,18 @@ header {
 .active {
     color: var(--clr-active);
 }
+
+/* ====================
+    Media Queries
+==================== */
+
+@media (min-width: 960px) {
+    .nav-bar {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+    .hamburger {
+        display: none;
+    }
+}
