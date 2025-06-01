@@ -96,6 +96,7 @@ h1, h2, h3, h4, h5, h6 {
    - Lists, buttons, images
 ==================== */
 
+/* Set base font, background, and colour styles */
 html, body {
     font-family: var(--font-body);
     font-size: 1rem;
@@ -105,43 +106,42 @@ html, body {
     scroll-behavior: smooth;
 }
 
+/* Enable sticky footer layout */
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+/* Allow main to fill remaining space */
 main {
     flex: 1;  /* Grow and fill space between header & footer */
 }
 
+/* Typography: use heading font for all heading levels */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
 }
 
+/* Set line height for larger headings */
 h1, h2, h3 { 
     line-height: 1.2;
 }
 
+/* Set line height for smaller headings */
 h4, h5, h6 {
     line-height: 1.4;
 }
 
+/* Heading sizes */
 h1 { font-size: 2.5rem; }  /* 40px */
-
-h2 { 
-    font-size: 2.25rem;    /* 36px */
-    margin: 2rem 0 1rem;
-} 
-
+h2 { font-size: 2.25rem; }   /* 36px */
 h3 { font-size: 2rem; }    /* 32px */
-
 h4 { font-size: 1.5rem; }  /* 24px */
-
 h5 { font-size: 1.25rem; } /* 20px */
-
 h6 { font-size: 1.125rem; } /* 18px */
 
+/* Paragraph styling */
 p {
     font-family: var(--font-body);
     font-size: 1rem;
@@ -149,10 +149,11 @@ p {
     margin-bottom: 1rem;
 }
 
+/* Inline text styles */
 strong { font-weight: 600; }
-
 em { font-style: italic; }
 
+/* Link styling with hover and focus states */
 a {
     text-decoration: none;
     color: var(--clr-text);
@@ -170,20 +171,24 @@ a:focus {
     outline-offset: 4px;
 }
 
+/* Remove default list styles */
 ul, ol, li {
     list-style-type: none;
 }
 
+/* Responsive image display */
 img {
     max-width: 100%;
     display: block;
 }
 
+/* Reset button to inherit font and enable cursor pointer */
 button {
     font: inherit;
     cursor: pointer;
 }
 
+/* Form field styling */
 input, textarea, select {
     border: 1px solid var(--clr-card-bg);
     border-radius: 0.5rem;
@@ -192,20 +197,24 @@ input, textarea, select {
     outline: none;
 }
 
+/* Add visible focus outline for accessibility */
 input:focus, textarea:focus, select:focus {
     outline: 2px solid var(--clr-accent);
 }
 
+/* Container layout utility */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
+/* Utility classes */
 .text-center {
     text-align: center;
 }
 
+/* Visually hided content but keep it accessible to screen readers */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -220,8 +229,11 @@ input:focus, textarea:focus, select:focus {
 
 /* ====================
    4. Custom Button Styles
+   - Primary and secondary CTA styles
+   - Consistent hover and focus behaviour
 ==================== */
 
+/* Primary CTA button */
 .primary-cta {
     background-color: var(--clr-accent);
     border-radius: var(--border-radius);
@@ -229,6 +241,7 @@ input:focus, textarea:focus, select:focus {
     padding: 8px 16px;
 }
 
+/* Hover state for primary CTA button */
 .primary-cta:hover {
     font-weight: 600;
     border: 1px solid var(--clr-hover);
@@ -236,6 +249,7 @@ input:focus, textarea:focus, select:focus {
     color: var(--clr-text);
 }
 
+/* Secondary CTA button (outline style) */
 .secondary-cta {
     background-color: transparent;
     border: 1px solid var(--clr-active);
@@ -245,6 +259,7 @@ input:focus, textarea:focus, select:focus {
     padding: 8px 16px;
 }
 
+/* Hover state for secondary CTA button */
 .secondary-cta:hover {
     font-weight: 600;
     border: 1px solid var(--clr-accent);
@@ -254,72 +269,82 @@ input:focus, textarea:focus, select:focus {
 
 /* ====================
    5. Header Styles
+   - Header layout and logo
+   - Mobile nav toggle behaviour
+   - Navigation item styling
 ==================== */
 
-/* Header layout */
+/* Layout structure for header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px;
+    display: flex;                      /* Align logo and nav horizontally */ 
+    justify-content: space-between;     /* Push logo left and menu right */
+    align-items: center;                /* verically centre items */
+    padding: 16px;                      /* Inner spacing */
 }
 
-/* Nav bar logo styles */
+/* Logo styles */
 .logo {
-    font-size: 1.25rem;
+    font-size: 1.25rem;     
     font-weight: 700;
     line-height: 1.2;
 }
 
-/* Hide nav bar by default */
+/* Navigation menu (mobile) - hidden by default */
 .nav-bar {
     display: none;
 }
 
+/* Show nav bar when toggled open (mobile) */
 .nav-bar.open {
     display: block;
-    /* Set nav bar position */
-    position: absolute;
+    position: absolute;                     /* Position below the header*/
     top: 60px;
     left: 16px;
     right: 16px;
-    background-color: var(--clr-card-bg);
+    background-color: var(--clr-card-bg);   /* Matches card background */
     padding: 16px;
     border-radius: var(--border-radius);
-    z-index: 100;
+    z-index: 100;                           /* Ensure it overlays content */
 }
 
-/* Nav item styles */
+/* Navigation link styles */
 #main-nav a {
-    display: block;
+    display: block;         /* Make links fulll width on mobile */
     font-size: 1.125rem;
     font-weight: 500;
 }
 
+/* Navigation list item spacing */
 #main-nav li {
-    margin: 0.8rem 0;
+    margin: 0.8rem 0;       /* Vertical spacing between items */
     padding: 0.5rem;
 }
 
+/* Active link indicator */
 .active {
-    color: var(--clr-active);
+    color: var(--clr-active);       /* Use active colour for current page */
 }
 
 /* ====================
    6. Footer Styles
+   - Footer layout and content areas
+   - Newsletter form, nav links and social icons
 ==================== */
 
+/* Footer container layout */
 footer {
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 16px;
+    flex-direction: column;     /* Stack content vertically on mobile */
+    gap: 12px;                  /* Space between sections */
+    padding: 16px;              /* Inner padding */
 }
 
+/* Icon spacing next to logo text */
 footer .logo i {
     margin-right: 6px;
 }
 
+/* Stack newsletter form fields, and nav lists */
 .newsletter-signup form,
 footer nav {
     display: flex;
@@ -327,20 +352,24 @@ footer nav {
     gap: 12px;
 }
 
+/* Add border and spacing below subscribe button */
 .newsletter-signup form .primary-cta {
-    border: 1px solid var(--clr-active);
+    border: 1px solid var(--clr-active);    /* Match footer's accent */
     margin-bottom: 16px;
 }
 
+/* Set consistent height for email input field */
 .newsletter-signup form input {
     height: 39px;
 }
 
+/* Display social icons in a row with spacing */
 footer .social-links ul {
     display: flex;
     gap: 16px;
 }
 
+/* Add spacing above legal links section */
 .bottom-footer {
     margin-top: 16px;
 }
@@ -420,16 +449,18 @@ footer .social-links ul {
 
 /* ====================
     Media Queries
+    - Adjust layout for tablets and desktop
 ==================== */
-@media (min-width: 768px) {
-    .logo {
-        text-align: center;
-    }
 
+/* Tablet view and up (min-width: 768px)*/
+@media (min-width: 768px) {
+    /* Centre align logo anf newsletter */
+    .logo,
     .newsletter-signup {
         text-align: center;
     }
 
+    /* Arrange input and button side by side */
     .newsletter-signup form {
         display: flex;
         flex-direction: row;
@@ -437,11 +468,13 @@ footer .social-links ul {
         align-items: baseline;
     }
 
+    /* Expand input to fill the space, max 332px */
     .newsletter-signup form input {
         flex-grow: 1;
         max-width: 332px;
     }
 
+    /* Align bottom footer sections horizontally */
     .bottom-footer {
         display: flex;
         justify-content: space-between;
@@ -449,24 +482,29 @@ footer .social-links ul {
         flex-wrap: wrap;
     }
 
+    /* Move social media buttons to the beginning and enlarge */
     .social-links {
         order: -1;
         font-size: 24px;
     }
 }
 
-/* Desktop */
+/* Desktop view and up (min-width: 960px) */
 @media (min-width: 960px) {
+    /* Increase padding around the header content */
     header {
         padding: 1rem 4rem;
     }
     
+    /* Show nav bar inline */
     .nav-bar {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         gap: 20px;
     }
+
+     /* Hide hamburger toggle */
     .hamburger {
         display: none;
     }
