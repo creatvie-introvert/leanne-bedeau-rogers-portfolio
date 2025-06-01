@@ -116,6 +116,9 @@ body {
 /* Allow main to fill remaining space */
 main {
     flex: 1;  /* Grow and fill space between header & footer */
+    
+    /* Add top spacing to the main content to avoid overlap with the fixed header  */
+    margin-top: 80px;
 }
 
 /* Typography: use heading font for all heading levels */
@@ -280,6 +283,13 @@ header {
     justify-content: space-between;     /* Push logo left and menu right */
     align-items: center;                /* verically centre items */
     padding: 16px;                      /* Inner spacing */
+    /* Make header fixed so it stays visible at the top whilst scrolling */
+    position: fixed;        /* Remove for document flow and pin to view */
+    top: 0;                 /* Anchor to top of the viewport */
+    left: 0;                /* Align to the left edge of the screen*/
+    right: 0;               /* Stretch to right edge of the screen*/
+    z-index: 1000;          /* Ensure it appears above all other elements */
+    background-color: var(--clr-bg);    /* Stop content from showing through */
 }
 
 /* Logo styles */
