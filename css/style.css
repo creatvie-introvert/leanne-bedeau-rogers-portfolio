@@ -208,11 +208,12 @@ input:focus, textarea:focus, select:focus {
 /* Container layout utility */
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 16px auto;
     padding: 0 1rem;
 }
 
 /* Utility classes */
+
 .text-center {
     text-align: center;
 }
