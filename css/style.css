@@ -511,13 +511,19 @@ footer .social-links ul {
     gap: 24px;
 }
 
+/* Smooth tranistion for icon colour and background colour on hover */
 .custom-card i {
     transition: color 0.2s ease, background-color 0.2s ease;
 }
 
+/* On card hover, update icon styling for interactive visual feedback */
 .services-card-container .custom-card:hover i {
     background-color: var(--clr-accent);
     color: var(--clr-text);
+}
+
+.section-cta {
+    margin-top: 24px;
 }
 
 /* ====================
