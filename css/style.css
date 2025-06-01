@@ -488,13 +488,15 @@ footer .social-links ul {
         font-size: 24px;
     }
 
+    /* Override full-width buttons for larger screens */
     .hero-btns,
     .hero-btns li {
-        width: auto;
+        width: auto;        /* Allow buttons to size based on content */
     }
 
+    /* Arrange hero buttons side by side */
     .hero-btns ul {
-        flex-direction: row;
+        flex-direction: row;    /* Horizontal button layout */
     }
 }
 
