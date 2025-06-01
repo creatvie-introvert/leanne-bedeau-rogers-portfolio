@@ -116,7 +116,7 @@ body {
 /* Allow main to fill remaining space */
 main {
     flex: 1;  /* Grow and fill space between header & footer */
-    
+
     /* Add top spacing to the main content to avoid overlap with the fixed header  */
     margin-top: 80px;
 }
@@ -215,6 +215,11 @@ input:focus, textarea:focus, select:focus {
 /* Utility classes */
 .text-center {
     text-align: center;
+}
+
+/* Subtle text stye for section intros or supportive copy */
+.muted-text {
+    color: var(--clr-secondary-text);
 }
 
 /* Visually hided content but keep it accessible to screen readers */
