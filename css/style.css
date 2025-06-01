@@ -235,6 +235,20 @@ input:focus, textarea:focus, select:focus {
     background-color: transparent;
 }
 
+.secondary-cta {
+    background-color: transparent;
+    border: 1px solid var(--clr-active);
+    border-radius: var(--border-radius);
+    text-align: center;
+    padding: 8px 16px;
+}
+
+.secondary-cta:hover {
+    font-weight: 600;
+    border: 1px solid var(--clr-hover);
+    color: var(--clr-hover);
+}
+
 /* ====================
    5. Header Styles
 ==================== */
@@ -333,7 +347,39 @@ footer .social-links ul {
 ==================== */
 
 /* Hero styles */
+#hero {
+    padding: 16px 16px;
+}
 
+.hero-content-container {
+    position: relative;
+    overflow: hidden;
+    padding: 24px 16px;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../assets/images/coding-station.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
 
 /* ====================
     Media Queries
