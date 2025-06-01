@@ -429,6 +429,11 @@ footer .social-links ul {
     margin: 0 auto; /* Horizontally centre text container */
 }
 
+/* Dim paragraph text colour in hero section for better contrast against the heading */
+.hero-text p {
+    color: var(--clr-secondary-text);
+}
+
 .hero-btns {
     /* Ensure button container spans the width of the text container */
     width: 100%;
