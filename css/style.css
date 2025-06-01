@@ -139,9 +139,9 @@ h4, h5, h6 {
 /* Heading sizes */
 h1 { font-size: 2.5rem; }  /* 40px */
 h2 { font-size: 2.25rem; }   /* 36px */
-h3 { font-size: 2rem; }    /* 32px */
-h4 { font-size: 1.5rem; }  /* 24px */
-h5 { font-size: 1.25rem; } /* 20px */
+h3 { font-size: 1.25rem; }    /* 20px */
+h4 { font-size: 1.125rem; }  /* 18px */
+h5 { font-size: 1.125rem; } /* 18px */
 h6 { font-size: 1.125rem; } /* 18px */
 
 /* Paragraph styling */
@@ -220,6 +220,25 @@ input:focus, textarea:focus, select:focus {
 /* Subtle text stye for section intros or supportive copy */
 .muted-text {
     color: var(--clr-secondary-text);
+}
+
+/* Base styles for individual service cards:
+   Use flex column layout, padding, background-color, and border border */
+.custom-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: var(--clr-card-bg);
+    border: 1px solid var(--clr-border);
+    border-radius: var(--border-radius);
+    padding: 24px;
+}
+
+/* Style card icons:
+   Emphasise the size and accent colour */
+.custom-card i {
+    font-size: 2rem;
+    color: var(--clr-accent);
 }
 
 /* Visually hided content but keep it accessible to screen readers */
@@ -467,6 +486,18 @@ footer .social-links ul {
     /* Force buttons to stretch across full width of the container */
     display: block;
     width: 100%;
+}
+
+/* ====================
+    Home page Services Cards
+==================== */
+
+/* Layout for the card container:
+   Stacks vertically on mobile with 24px gap between */
+.services-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 /* ====================
