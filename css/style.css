@@ -294,6 +294,13 @@ header {
     display: none;
 }
 
+/* Style the hamburger button (mobile and tablet) */
+.hamburger {
+    border: none;       /* Remove default button border */
+    background: none;   /* Remove default button background */
+    font-size: 30px;    /* Increase icon size for better visibility */
+}
+
 /* Show nav bar when toggled open (mobile) */
 .nav-bar.open {
     display: block;
