@@ -265,6 +265,11 @@ input:focus, textarea:focus, select:focus {
     border: 0;
 }
 
+/* Margin for the section cta buttons */
+.section-cta {
+    margin-top: 24px;
+}
+
 /* ====================
    4. Custom Button Styles
    - Primary and secondary CTA styles
@@ -522,10 +527,6 @@ footer .social-links ul {
     color: var(--clr-text);
 }
 
-.section-cta {
-    margin-top: 24px;
-}
-
 /* ====================
     Media Queries
     - Adjust layout for tablets and desktop
@@ -576,6 +577,17 @@ footer .social-links ul {
     /* Arrange hero buttons side by side */
     .hero-btns ul {
         flex-direction: row;    /* Horizontal button layout */
+    }
+
+    /* Switch to horizontal layout, and allow wrapping for a 2x2 grid */
+    .services-card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /* Each card takes up approximately half the width of the container, allowing 2 per row */
+    .custom-card {
+        flex: 1 1 48%;      /* Grow/shrink as needed, basis of 48% to account   for gap/margins */
     }
 }
 
