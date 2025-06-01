@@ -487,6 +487,15 @@ footer .social-links ul {
         order: -1;
         font-size: 24px;
     }
+
+    .hero-btns,
+    .hero-btns li {
+        width: auto;
+    }
+
+    .hero-btns ul {
+        flex-direction: row;
+    }
 }
 
 /* Desktop view and up (min-width: 960px) */
