@@ -232,21 +232,24 @@ input:focus, textarea:focus, select:focus {
 .primary-cta:hover {
     font-weight: 600;
     border: 1px solid var(--clr-hover);
-    background-color: transparent;
+    background-color: var(--clr-hover);
+    color: var(--clr-text);
 }
 
 .secondary-cta {
     background-color: transparent;
     border: 1px solid var(--clr-active);
     border-radius: var(--border-radius);
+    color: var(--clr-active);
     text-align: center;
     padding: 8px 16px;
 }
 
 .secondary-cta:hover {
     font-weight: 600;
-    border: 1px solid var(--clr-hover);
-    color: var(--clr-hover);
+    border: 1px solid var(--clr-accent);
+    background-color: var(--clr-accent);
+    color: var(--clr-text);
 }
 
 /* ====================
@@ -379,6 +382,29 @@ footer .social-links ul {
     justify-content: center;
     align-items: center;
     gap: 24px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-btns {
+    width: 100%;
+}
+
+.hero-btns ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.hero-btns li {
+    display: block;
+    width: 100%;
+}
+
+.hero-btns a {
+    display: block;
+    width: 100%;
 }
 
 /* ====================
