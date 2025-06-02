@@ -1,6 +1,4 @@
-/* ====================
-   1. CSS Reset
-==================== */
+/* ===== 1. CSS Reset ===== */
 
 /* Intuitive box-sizing model */
 *, *::before, *::after {
@@ -57,9 +55,7 @@ h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
-/* ====================
-   2. Variables (Custom Properties)
-==================== */
+/* ===== 2. Variables (Custom Properties) ===== */
 
 :root {
     /* Colour Variables */
@@ -89,12 +85,7 @@ h1, h2, h3, h4, h5, h6 {
     --border-radius: 0.5rem;
 }
 
-/* ====================
-   3. Global Styles
-   - Base typography
-   - Links
-   - Lists, buttons, images
-==================== */
+/* ===== 3. Global Styles ===== */
 
 /* Set base font, background, and colour styles */
 html, body {
@@ -271,11 +262,7 @@ input:focus, textarea:focus, select:focus {
     margin-top: 24px;
 }
 
-/* ====================
-   4. Custom Button Styles
-   - Primary and secondary CTA styles
-   - Consistent hover and focus behaviour
-==================== */
+/* ===== 4. Custom Button Styles ===== */
 
 /* Primary CTA button */
 .primary-cta {
@@ -311,12 +298,7 @@ input:focus, textarea:focus, select:focus {
     color: var(--clr-text);
 }
 
-/* ====================
-   5. Header Styles
-   - Header layout and logo
-   - Mobile nav toggle behaviour
-   - Navigation item styling
-==================== */
+/* ===== 5. Header Styles ===== */
 
 /* Layout structure for header */
 header {
@@ -383,11 +365,7 @@ header {
     color: var(--clr-active);       /* Use active colour for current page */
 }
 
-/* ====================
-   6. Footer Styles
-   - Footer layout and content areas
-   - Newsletter form, nav links and social icons
-==================== */
+/* ===== 6. Footer Styles ===== */
 
 /* Footer container layout */
 footer {
@@ -425,18 +403,15 @@ footer nav {
 footer .social-links ul {
     display: flex;
     gap: 16px;
+    margin: 16px 0;
 }
 
 /* Add spacing above legal links section */
 .bottom-footer {
-    margin-top: 16px;
+    margin-top: 20px;
 }
 
-/* ====================
-   HERO STYLES
-   Full width hero section with background image,
-   centred text, and stacked CTAs
-==================== */
+/* ===== HERO STYLES ===== */
 
 /* Hero styles */
 #hero {
@@ -505,9 +480,7 @@ footer .social-links ul {
     width: 100%;
 }
 
-/* ====================
-    Home page Services Cards
-==================== */
+/* ===== Home page Services Cards ===== */
 
 /* Layout for the card container:
    Stacks vertically on mobile with 24px gap between */
@@ -528,10 +501,7 @@ footer .social-links ul {
     color: var(--clr-text);
 }
 
-/* ====================
-    Media Queries
-    - Adjust layout for tablets and desktop
-==================== */
+/* ===== Media Queries ===== */
 
 /* Tablet view and up (min-width: 768px)*/
 @media (min-width: 768px) {
@@ -567,6 +537,7 @@ footer .social-links ul {
     .social-links {
         order: -1;
         font-size: 24px;
+        margin-top: 0;
     }
 
     /* Override full-width buttons for larger screens */
