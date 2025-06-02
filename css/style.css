@@ -501,6 +501,14 @@ footer .social-links ul {
     color: var(--clr-text);
 }
 
+/* ===== Featured Projects Styles ===== */
+
+.featured-project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
 /* ===== Media Queries ===== */
 
 /* Tablet view and up (min-width: 768px)*/
