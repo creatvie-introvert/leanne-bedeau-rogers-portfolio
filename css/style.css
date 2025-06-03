@@ -505,6 +505,7 @@ footer .social-links ul {
 
 /* ===== Featured Projects Styles ===== */
 
+/* Grid layout for project cards */
 .featured-project-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -526,17 +527,17 @@ footer .social-links ul {
     border: 1px solid var(--clr-hover);
 }
 
-.project-card a {
-    color: var(--clr-accent);
-    transition: color 0.2s ease-in-out;
+/* Card content */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px;
 }
 
-.project-card a:hover {
-    color: var(--clr-hover);
-}
-
-/* Image wrapper with background gradient */
+/* Project image and hover FX */
 .image-wrapper {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -546,11 +547,8 @@ footer .social-links ul {
     width: 100%;
     height: 200px;
     overflow: hidden;
-
-    position: relative;
 }
 
-/* Project image styling and hover */
 .image-wrapper img {
     width: 100%;
     height: 100%;
@@ -563,11 +561,16 @@ footer .social-links ul {
     transform: scale(1.3);      /* Zoom on hover */
 }
 
+/* Hover buttons on image */
 .hover-btns-container {
     position: absolute;
     bottom: 16px;
     left: 16px;
     display: none;
+}
+
+.project-card:hover .hover-btns-container {
+    display: block;
 }
 
 .primary-hover-btn, .secondary-hover-btn {
@@ -598,16 +601,14 @@ footer .social-links ul {
     font-weight: 600;
 }
 
-.project-card:hover .hover-btns-container {
-    display: block;
+/* Link styling in card */
+.project-card a {
+    color: var(--clr-accent);
+    transition: color 0.2s ease-in-out;
 }
 
-/* Card content */
-.content-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 24px;
+.project-card a:hover {
+    color: var(--clr-hover);
 }
 
 /* ===== Media Queries ===== */
