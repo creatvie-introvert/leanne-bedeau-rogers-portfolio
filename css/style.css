@@ -524,10 +524,20 @@ footer .social-links ul {
     background-color: var(--clr-card-bg);
     border: 1px solid var(--clr-border);
     border-radius: var(--border-radius);
+    transition: border-color 0.2s ease-in-out;
 }
 
 .project-card:hover, .project-card:focus {
     border: 1px solid var(--clr-hover);
+}
+
+.project-card a {
+    color: var(--clr-accent);
+    transition: color 0.2s ease-in-out;
+}
+
+.project-card a:hover {
+    color: var(--clr-hover);
 }
 
 /* Image wrapper with background gradient */
