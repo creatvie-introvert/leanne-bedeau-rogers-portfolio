@@ -115,6 +115,7 @@ main {
 /* Typography: use heading font for all heading levels */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
+    color: var(--clr-text);
 }
 
 /* Set line height for larger headings */
@@ -140,6 +141,7 @@ p {
     font-family: var(--font-body);
     font-size: 1rem;
     line-height: 1.6;
+    color: var(--clr-secondary-text);
     margin-bottom: 1rem;
 }
 
