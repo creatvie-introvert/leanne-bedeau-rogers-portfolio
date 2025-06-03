@@ -201,7 +201,7 @@ input:focus, textarea:focus, select:focus {
 /* Container layout utility */
 .container {
     max-width: 1200px;
-    margin: 16px auto;
+    margin: 16px auto 32px;
     padding: 0 1rem;
 }
 
