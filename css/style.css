@@ -505,6 +505,10 @@ footer .social-links ul {
 
 /* ===== Featured Projects Styles ===== */
 
+.featured-projects-container {
+    padding: 24px 16px;
+}
+
 /* Featured projects grid layout */
 .featured-project-cards {
     display: grid;
