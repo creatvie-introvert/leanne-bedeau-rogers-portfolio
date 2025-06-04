@@ -611,6 +611,49 @@ footer .social-links ul {
     color: var(--clr-hover);
 }
 
+/* ===== Tech Stack Styles ===== */
+
+/* Tech stack icon styling */
+.icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    margin-right: 48px;
+}
+
+/* Wrapper - acts as the viewport */
+.scrolling-wrapper {
+    overflow-x: hidden;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+/* Scrolling wrapper icons list */
+.scrolling-track {
+    display: flex;
+    width: max-content;
+    min-width: 200%;
+    animation: scroll-left 15s linear infinite;
+    will-change: transform;
+}
+
+.scrolling-wrapper:hover .scrolling-track {
+    animation-play-state: paused;
+}
+
+.icon-html5 {
+    fill: #E34F26;
+}
+
+@keyframes scroll-left {
+    0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
 /* ===== Media Queries ===== */
 
 /* Tablet view and up (min-width: 768px)*/
