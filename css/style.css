@@ -232,6 +232,16 @@ input:focus, textarea:focus, select:focus {
     border: 1px solid var(--clr-hover);
 }
 
+.card-btn {
+    border: none;
+    background-color: none;
+    color: var(--clr-accent);
+}
+
+.card-btn:hover, .card-btn:focus {
+    color: var(--clr-hover);
+}
+
 /* Style card icons:
    Emphasise the size and accent colour */
 .custom-card i {
@@ -574,7 +584,7 @@ footer .social-links ul {
 }
 
 .primary-hover-btn, .secondary-hover-btn {
-    color: var(--clr-text);
+    color: var(--clr-text) !important;
     border: none;
     border-radius: var(--border-radius);
     text-align: center;
