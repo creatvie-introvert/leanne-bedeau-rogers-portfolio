@@ -36,15 +36,15 @@
     <!-- Header -->
     <header>
         <!-- Full name logo on left -->
-        <h1 class="logo">
-            <a href="index.html">Leanne Bedeau-Rogers</a>
-        </h1>
+        <div class="logo">
+            <a href="index.html" aria-label="Go to Homepage">Leanne Bedeau-Rogers</a>
+        </div>
 
         <!-- Navigation items -->
         <nav id="main-nav" aria-label="Main navigation">
             <ul class="nav-bar">
                 <li>
-                    <a href="index.html" class="active">Home</a>
+                    <a href="index.html" class="active" aria-current="page">Home</a>
                 </li>
                 <li>
                     <a href="about.html">About</a>
@@ -78,7 +78,7 @@
 
     <main>
         <!-- Hero section - intro with background image -->
-        <section id="hero" role="region" aria-label="Introduction">
+        <section id="hero" aria-labelledby="hero-heading">
 
             <!-- Outer container for layout alignment -->
             <div class="container hero-content-container">
@@ -89,7 +89,7 @@
                 <!-- Main hero text content -->
                 <div class="hero-text">
                     <!-- Page headline / Value proposition -->
-                    <h1 class="text-center">
+                    <h1 id="hero-heading" class="text-center">
                         Crafting Clean, Responsive Websites with Purpose and Precision
                     </h1>
 
@@ -475,7 +475,10 @@
         <!-- Newsletter sign up -->
         <div class="newsletter-signup">
             <p>Stay up to date with my portfolio</p>
-            <form action="">
+            <form action="" aria-label="Newsletter signup">
+                <label for="newsletter-email" class="visually-hidden">
+                    Email address
+                </label>
                 <input type="email" name="email" placeholder="Enter your email" required>
                 <button type="submit" class="primary-cta">Subscribe</button>
             </form>
@@ -499,9 +502,21 @@
             <!-- Social icons - github, facebook, linkedin -->
             <div class="social-links">
                 <ul>
-                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li>
+                        <a href="https://github.com/creatvie-introvert" target="_blank" aria-label="Visit my GitHub profile">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="www.linkedin.com/in/leanne-bedeau-rogers" aria-label="Visit my LinkedIn profile">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://codepen.io/leanne-bedeau-rogers" target="_blank" rel="noopener" aria-label="Visit my CodePen profile">
+                            <i class="fa-brands fa-codepen"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
 

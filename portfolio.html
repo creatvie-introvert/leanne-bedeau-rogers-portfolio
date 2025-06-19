@@ -38,9 +38,9 @@
     <!-- Header -->
     <header>
         <!-- Full name logo on left -->
-        <h1 class="logo">
-            <a href="index.html">Leanne Bedeau-Rogers</a>
-        </h1>
+        <div class="logo">
+            <a href="index.html" aria-label="Go to Homepage">Leanne Bedeau-Rogers</a>
+        </div>
 
         <!-- Navigation items -->
         <nav id="main-nav" aria-label="Main navigation">
@@ -55,7 +55,7 @@
                     <a href="services.html">Services</a>
                 </li>
                 <li>
-                    <a href="portfolio.html" class="active">Portfolio</a>
+                    <a href="portfolio.html" class="active" aria-current="page">Portfolio</a>
                 </li>
                 <li>
                     <a href="blog.html">Blog</a>
@@ -95,7 +95,10 @@
         <!-- Newsletter sign up -->
         <div class="newsletter-signup">
             <p>Stay up to date with my portfolio</p>
-            <form action="">
+            <form action="" aria-label="Newsletter signup">
+                <label for="newsletter-email" class="visually-hidden">
+                    Email address
+                </label>
                 <input type="email" name="email" placeholder="Enter your email" required>
                 <button type="submit" class="primary-cta">Subscribe</button>
             </form>
@@ -117,13 +120,25 @@
         </nav>
 
         <!-- Social icons - github, facebook, linkedin -->
-         <div class="social-links">
+        <div class="social-links">
             <ul>
-                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li>
+                    <a href="https://github.com/creatvie-introvert" target="_blank" aria-label="Visit my GitHub profile">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="www.linkedin.com/in/leanne-bedeau-rogers" aria-label="Visit my LinkedIn profile">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://codepen.io/leanne-bedeau-rogers" target="_blank" rel="noopener" aria-label="Visit my CodePen profile">
+                        <i class="fa-brands fa-codepen"></i>
+                    </a>
+                </li>
             </ul>
-         </div>
+        </div>
 
         <!-- Legal Links - t&c, privacy policy, cookies policy -->
         <nav aria-label="Legal links">

@@ -310,6 +310,13 @@ input:focus, textarea:focus, select:focus {
     color: var(--clr-text);
 }
 
+.primary-cta:focus,
+.secondary-cta:focus {
+    outline: 2px solid var(--clr-accent);
+    outline-offset: 4px;
+    box-shadow: 0 0 0 4px var(--clr-shadow);
+}
+
 /* ===== 5. Header Styles ===== */
 
 /* Layout structure for header */
