@@ -269,6 +269,21 @@ input:focus, textarea:focus, select:focus {
     border: 0;
 }
 
+.focusable:active,
+.focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    clip: auto;
+    white-space: normal;
+    background-color: var(--clr-accent);
+    color: var(--clr-text);
+    text-decoration: underline;
+    z-index: 1000;
+}
+
 /* Margin for the section cta buttons */
 .section-cta {
     margin-top: 24px;
