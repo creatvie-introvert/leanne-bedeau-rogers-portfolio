@@ -201,7 +201,7 @@ input:focus, textarea:focus, select:focus {
 /* Container layout utility */
 .container {
     max-width: 1200px;
-    margin: 16px auto 32px;
+    margin: 32px auto;
     padding: 0 1rem;
 }
 
@@ -690,7 +690,6 @@ footer .social-links ul {
 
 .pulsing-bg {
     position: absolute;
-    /* background-color: var(--clr-card-bg); */
     inset: 0;
     overflow: hidden;
     z-index: 0;
@@ -701,6 +700,7 @@ footer .social-links ul {
     width: 100%;
     height: 100%;
     background-color: var(--clr-card-bg);
+    border-radius: var(--border-radius);
 }
 
 .pulse {
