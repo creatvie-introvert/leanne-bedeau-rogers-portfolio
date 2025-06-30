@@ -1,0 +1,35 @@
+[
+    {
+        "id": "project1",
+        "title": "1984.1 - A Satirical Orwellian Microsite",
+        "category": "Web Design",
+        "description":  "A darkly humourous site exploring modern surveillance and civil obedienc through a dystopian lens.",
+        "image": "../images/1984-1-mockup.webp",
+        "liveDemo": "https://creatvie-introvert.github.io/1984-1/",
+        "sourceCode":  "https://github.com/creatvie-introvert/1984-1",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "highlights": [
+            "Multi-page responsive website",
+            "Dark Humour theme with satirical content",
+            "Scroll-triggered animations and interactive UI"
+        ]
+    },
+    {
+        "id": "jshinterface",
+        "title": "JSHinterface",
+        "category": "JavaScript / API Integration",
+        "description": "A simple, interface built with JavaSCript that demonstrates core DOM anipulation, event handling techniques and API interaction techniques.",
+        "image": "../images/JSHinterface-mockup.webp",
+        "liveDemo": "https://creatvie-introvert.github.io/JSHinterface/",
+        "sourceCode": "https://github.com/creatvie-introvert/JSHinterface",
+        "technologies": ["HTML", "CSS", "Bootstrap", "JavaScript", "API"],
+        "highlights":[
+            "Demonstrates dynamic DOM updates",
+            "Interactive user input handling",
+            "Clean minimal interface design",
+            "Real-time linting results",
+            "Light/Dark mode toggle",
+            "Responsive form UI"
+        ]
+    }
+]

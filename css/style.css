@@ -600,9 +600,14 @@ footer .social-links ul {
     left: 16px;
     display: none;
 }
-
-.project-card:hover .hover-btns-container {
+/*
+.project-card:hover .hover-btns-container,
+.project-card .hover-btns-container.show-btns {
     display: block;
+}*/
+
+.hover-btns-container {
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .primary-hover-btn, .secondary-hover-btn {
@@ -860,4 +865,18 @@ footer .social-links ul {
     .custom-card {
         flex: 1 1 22%;
     }
+}
+
+/* Show on hover for devices with pointer (desktop) */
+@media (hover: hover) and (pointer: fine) {
+  .project-card:hover .hover-btns-container {
+    display: block;
+  }
+}
+
+/* Show when .show-btns is toggled on (mobile) */
+@media (hover: none) and (pointer: coarse) {
+  .project-card .hover-btns-container.show-btns {
+    display: block;
+  }
 }
