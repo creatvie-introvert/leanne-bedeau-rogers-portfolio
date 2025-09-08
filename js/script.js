@@ -25,8 +25,22 @@ function toggleProjectButtons(event) {
   const btns = card.querySelector('.hover-btns-container');
   if (window.innerWidth <= 960 && btns) {
     btns.classList.toggle('show-btns');
+    const isActive = card.classList.toggle('card-border');
+    btns.classList.toggle('show-btns', isActive);
   }
 }
+
+// // Toggle project buttons and border on card click, and hide them when clicking outside
+document.addEventListener('click', (e) => {
+  const activeCard = document.querySelector('.project-card.card-border');
+  if (activeCard && !activeCard.contains(e.target)) {
+    activeCard.classList.remove('card-border');
+    const btns = activeCard.querySelector('.hover-btns-container');
+    if (btns) {
+      btns.classList.remove('show-btns');
+    }
+  }
+});
 
 // Attach event listeners to all project cards
 function initProjectCardToggles() {
