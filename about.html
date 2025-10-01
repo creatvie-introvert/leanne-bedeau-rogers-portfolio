@@ -52,19 +52,17 @@
                     <a href="about.html" class="active" aria-current="page">About</a>
                 </li>
                 <li>
-                    <a href="services.html">Services</a>
+                    <a href="index.html#services">Services</a>
                 </li>
                 <li>
-                    <a href="portfolio.html">Portfolio</a>
-                </li>
-                <li>
-                    <a href="blog.html">Blog</a>
+                    <a href="index.html#projects-container">Portfolio</a>
                 </li>
                 <li>
                     <a href="contact.html">Contact</a>
                 </li>
                 <li>
-                    <a href="assets/cv/front-end-developer-cv.pdf" class="primary-cta" download="My-CV" aria-label="Download my CV in PDF format">
+                    <a href="assets/cv/front-end-developer-cv.pdf" class="primary-cta" download="My-CV"
+                        aria-label="Download my CV in PDF format">
                         Download CV <i class="fa-solid fa-download"></i>
                     </a>
                 </li>
@@ -78,15 +76,52 @@
     </header>
 
     <main>
-        <!-- Hero section -->
+        <!-- About Me Section -->
+        <section class="about-intro container" aria-labelledby="about-heading">
+            <div class="about-layout">
+                <img src="assets/images/profile_pic.webp" alt="Portrait of Leanne Bedeau-Rogers" class="about-photo">
+                <div class="about-text">
+                    <h1 id="about-heading">About Me</h1>
+                    <p>
+                        I’m <strong>Leanne Bedeau-Rogers</strong>, a front-end developer passionate about building
+                        clean, responsive,
+                        and accessible web applications. With a strong focus on usability, I turn ideas into
+                        interactive,
+                        user-centered digital experiences that make an impact.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-        <!-- My expertise -->
+        <!-- What I Bring Section -->
+        <section class="about-skills container" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">What I Bring</h2>
+            <ul class="skills-list">
+                <li><i class="fa-solid fa-check"></i> Clean, semantic HTML & modern CSS</li>
+                <li><i class="fa-solid fa-check"></i> Interactive JavaScript with API integrations</li>
+                <li><i class="fa-solid fa-check"></i> Accessibility-first design approach</li>
+                <li><i class="fa-solid fa-check"></i> Responsive layouts for all devices</li>
+            </ul>
+        </section>
 
-        <!-- My professional journey -->
+        <!-- Beyond the Code Section -->
+        <section class="about-personal container" aria-labelledby="personal-heading">
+            <h2 id="personal-heading">Beyond the Code</h2>
+            <p>
+                Outside of development, I enjoy learning new technologies, creative design, and solving real-world
+                problems through digital solutions. My goal is to continue growing as a developer while helping others
+                bring their projects to life.
+            </p>
+        </section>
 
-        <!-- My professional values -->
-
-        <!-- Testimonials -->
+        <!-- Mini CTA Section -->
+        <section class="about-cta">
+            <div class="about-cta-content">
+                <h2>Want to Collaborate?</h2>
+                <p>Let’s build something amazing together.</p>
+                <a href="contact.html" class="primary-cta">Get in Touch</a>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -113,53 +148,54 @@
         <hr>
 
         <div class="bottom-footer">
-        <!-- Quick links - home, about, etc -->
-        <nav aria-label="Footer navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+            <!-- Quick links - home, about, etc -->
+            <nav aria-label="Footer navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#projects-container">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-        <!-- Social icons - github, facebook, linkedin -->
-        <div class="social-links">
-            <ul>
-                <li>
-                    <a href="https://github.com/creatvie-introvert" target="_blank" aria-label="Visit my GitHub profile">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="www.linkedin.com/in/leanne-bedeau-rogers" aria-label="Visit my LinkedIn profile">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://codepen.io/leanne-bedeau-rogers" target="_blank" rel="noopener" aria-label="Visit my CodePen profile">
-                        <i class="fa-brands fa-codepen"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+            <!-- Social icons - github, facebook, linkedin -->
+            <div class="social-links">
+                <ul>
+                    <li>
+                        <a href="https://github.com/creatvie-introvert" target="_blank"
+                            aria-label="Visit my GitHub profile">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="www.linkedin.com/in/leanne-bedeau-rogers" aria-label="Visit my LinkedIn profile">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://codepen.io/leanne-bedeau-rogers" target="_blank" rel="noopener"
+                            aria-label="Visit my CodePen profile">
+                            <i class="fa-brands fa-codepen"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-        <!-- Legal Links - t&c, privacy policy, cookies policy -->
-        <nav aria-label="Legal links">
-            <ul>
-                <li><a href="#">Terms and Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Cookies Policy</a></li>
-            </ul>
-        </nav>
+            <!-- Legal Links - t&c, privacy policy, cookies policy -->
+            <nav aria-label="Legal links">
+                <ul>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookies Policy</a></li>
+                </ul>
+            </nav>
         </div>
 
         <!-- Copyright -->
         <p>&copy; 2025 Leanne Bedeau-Rogers. All rights reserved.</p>
     </footer>
-    
+
     <!-- JavaScript script -->
     <script src="js/script.js" defer></script>
 </body>
