@@ -49,22 +49,20 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="about.html">About</a>
+                    <a href="about.html" class="active" aria-current="page">About</a>
                 </li>
                 <li>
-                    <a href="services.html">Services</a>
+                    <a href="index.html#services">Services</a>
                 </li>
                 <li>
-                    <a href="portfolio.html">Portfolio</a>
+                    <a href="index.html#projects-container">Portfolio</a>
                 </li>
                 <li>
-                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
                 </li>
                 <li>
-                    <a href="contact.html" class="active" aria-current="page">Contact</a>
-                </li>
-                <li>
-                    <a href="assets/cv/front-end-developer-cv.pdf" class="primary-cta" download="My-CV" aria-label="Download my CV in PDF format">
+                    <a href="assets/cv/front-end-developer-cv.pdf" class="primary-cta" download="My-CV"
+                        aria-label="Download my CV in PDF format">
                         Download CV <i class="fa-solid fa-download"></i>
                     </a>
                 </li>
@@ -78,9 +76,52 @@
     </header>
 
     <main>
-        <!-- Page intro -->
+        <!-- Contact Intro -->
+        <section class="contact-intro container page-top" aria-labelledby="contact-heading">
+            <h1 id="contact-heading">Get in Touch</h1>
+            <p class="muted-text text-center">
+                Have a project in mind or want to collaborate? Fill out the form below or reach out directly via email.
+            </p>
+        </section>
 
-        <!-- Contact form -->
+        <!-- Contact Form Section -->
+        <section class="contact-form-section container">
+            <form class="contact-form" action="https://formspree.io/f/myznjgeo" method="POST">
+                <!-- Name -->
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                <!-- Email -->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+                <!-- Message -->
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Write your message here..."
+                    required></textarea>
+
+                <!-- Consent -->
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">I agree to the privacy policy</label>
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" class="primary-cta">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Direct Contact Info -->
+        <section class="contact-details container">
+            <h2>Other Ways to Reach Me</h2>
+            <ul>
+                <li><i class="fa-solid fa-envelope"></i> <a href="mailto:leanne@example.com">leanne@example.com</a></li>
+                <li><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/leanne-bedeau-rogers"
+                        target="_blank">LinkedIn</a></li>
+                <li><i class="fa-brands fa-github"></i> <a href="https://github.com/creatvie-introvert"
+                        target="_blank">GitHub</a></li>
+            </ul>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -107,53 +148,54 @@
         <hr>
 
         <div class="bottom-footer">
-        <!-- Quick links - home, about, etc -->
-        <nav aria-label="Footer navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+            <!-- Quick links - home, about, etc -->
+            <nav aria-label="Footer navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#projects-container">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-        <!-- Social icons - github, facebook, linkedin -->
-        <div class="social-links">
-            <ul>
-                <li>
-                    <a href="https://github.com/creatvie-introvert" target="_blank" aria-label="Visit my GitHub profile">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="www.linkedin.com/in/leanne-bedeau-rogers" aria-label="Visit my LinkedIn profile">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://codepen.io/leanne-bedeau-rogers" target="_blank" rel="noopener" aria-label="Visit my CodePen profile">
-                        <i class="fa-brands fa-codepen"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+            <!-- Social icons - github, facebook, linkedin -->
+            <div class="social-links">
+                <ul>
+                    <li>
+                        <a href="https://github.com/creatvie-introvert" target="_blank"
+                            aria-label="Visit my GitHub profile">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="www.linkedin.com/in/leanne-bedeau-rogers" aria-label="Visit my LinkedIn profile">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://codepen.io/leanne-bedeau-rogers" target="_blank" rel="noopener"
+                            aria-label="Visit my CodePen profile">
+                            <i class="fa-brands fa-codepen"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-        <!-- Legal Links - t&c, privacy policy, cookies policy -->
-        <nav aria-label="Legal links">
-            <ul>
-                <li><a href="#">Terms and Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Cookies Policy</a></li>
-            </ul>
-        </nav>
+            <!-- Legal Links - t&c, privacy policy, cookies policy -->
+            <nav aria-label="Legal links">
+                <ul>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookies Policy</a></li>
+                </ul>
+            </nav>
         </div>
 
         <!-- Copyright -->
         <p>&copy; 2025 Leanne Bedeau-Rogers. All rights reserved.</p>
     </footer>
-    
+
     <!-- JavaScript script -->
     <script src="js/script.js" defer></script>
 </body>
