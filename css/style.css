@@ -199,6 +199,9 @@ input:focus, textarea:focus, select:focus {
 }
 
 /* Container layout utility */
+section {
+    scroll-margin-top: 7rem;
+}
 .container {
     max-width: 1200px;
     margin: 32px auto;
