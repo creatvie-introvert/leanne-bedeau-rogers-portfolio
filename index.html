@@ -177,13 +177,6 @@
                     </p>
                 </article>
             </div>
-
-            <!-- CTA button linking to full services page -->
-            <div class="section-cta text-center">
-                <a href="services.html" class="primary-cta" aria-label="View all services offered">
-                    View All Services
-                </a>
-            </div>
         </section>
 
         <!-- Featured projects section - showcases recent work -->
@@ -222,9 +215,9 @@
                             A darkly humorous multi-page site exploring modern surveillance and civil obedience through a dystopian lens.
                         </p>
                         <p>
-                            <a href="">
+                            <button class="card-btn" data-id="project1">
                                 View Project
-                            </a>
+                            </button>
                         </p>
                     </div>
                 </article>
@@ -245,47 +238,41 @@
                             WordWeaver is a browser-based crossword game that generates dynamic puzzles from trivia questions across multiple categories and difficulty levels.
                         </p>
                         <p>
-                            <a href="">
+                            <button class="card-btn" data-id="project2">
                                 View Project
-                            </a>
+                            </button>
                         </p>
                     </div>
                 </article>
 
-                <!-- Placeholder card for thrid project -->
+                <!-- Completed project To-Do List -->
                 <article class="project-card">
                     <div class="image-wrapper">
-                        <img src="assets/images/coming-soon.webp" alt="Coming soon placeholder">
+                        <img src="assets/images/to-do-list.webp" alt="Thumbnail preview of the To-Do List web app">
                         <!-- Action buttons revealed on hover: allows users to view live demo or source code -->
                         <div class="hover-btns-container">
-                            <a class="primary-hover-btn">
+                            <a class="primary-hover-btn" href="https://creatvie-introvert.github.io/todo-list/">
                                 Live Demo
                             </a>
-                            <a class="secondary-hover-btn">
+                            <a class="secondary-hover-btn" href="https://github.com/creatvie-introvert/todo-list">
                                 Code
                             </a>
                         </div>
                     </div>
                     <div class="content-wrapper">
                         <h3>
-                            Third project coming soon
+                            To-Do List
                         </h3>
                         <p>
-                            A future case study highlighting UI, accessibility, and performance.
+                            To-Do List is a browser-based task manager that lets users add, mark, and delete tasks in a clean and simple interface for organizing daily activities.
                         </p>
                         <p>
-                            <button class="card-btn">
+                            <button class="card-btn" data-id="project3">
                                 View Project
                             </button>
                         </p>
                     </div>
                 </article>
-            </div>
-
-            <div class="section-cta text-center">
-                <a href="portfolio.html" class="primary-cta" aria-label="Visit my portfolio">
-                    View My Work
-                </a>
             </div>
         </section>
 
@@ -537,6 +524,13 @@
         <!-- Copyright -->
         <p>&copy; 2025 Leanne Bedeau-Rogers. All rights reserved.</p>
     </footer>
+
+    <!-- Modal (empty container) -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+        </div>
+    </div>
 
     <!-- JavaScript script -->
     <script src="js/script.js" defer></script>

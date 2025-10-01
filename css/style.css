@@ -643,6 +643,45 @@ footer .social-links ul {
     color: var(--clr-hover);
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-content {
+    background: var(--clr-card-bg);
+    color: #F5F5F5;
+    padding: 2rem;
+    border-radius: 0.625rem;
+    max-width: 50rem;
+    width: 90%;
+    text-align: left;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #B3A580;
+}
+
+.modal img {
+    max-width: 100%;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+}
+
 /* ===== Tech Stack Styles ===== */
 
 /* Tech stack icon styling */

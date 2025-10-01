@@ -1,35 +1,47 @@
 [
-    {
-        "id": "project1",
-        "title": "1984.1 - A Satirical Orwellian Microsite",
-        "category": "Web Design",
-        "description":  "A darkly humourous site exploring modern surveillance and civil obedienc through a dystopian lens.",
-        "image": "../images/1984-1-mockup.webp",
-        "liveDemo": "https://creatvie-introvert.github.io/1984-1/",
-        "sourceCode":  "https://github.com/creatvie-introvert/1984-1",
-        "technologies": ["HTML", "CSS", "JavaScript"],
-        "highlights": [
-            "Multi-page responsive website",
-            "Dark Humour theme with satirical content",
-            "Scroll-triggered animations and interactive UI"
-        ]
-    },
-    {
-        "id": "jshinterface",
-        "title": "JSHinterface",
-        "category": "JavaScript / API Integration",
-        "description": "A simple, interface built with JavaSCript that demonstrates core DOM anipulation, event handling techniques and API interaction techniques.",
-        "image": "../images/JSHinterface-mockup.webp",
-        "liveDemo": "https://creatvie-introvert.github.io/JSHinterface/",
-        "sourceCode": "https://github.com/creatvie-introvert/JSHinterface",
-        "technologies": ["HTML", "CSS", "Bootstrap", "JavaScript", "API"],
-        "highlights":[
-            "Demonstrates dynamic DOM updates",
-            "Interactive user input handling",
-            "Clean minimal interface design",
-            "Real-time linting results",
-            "Light/Dark mode toggle",
-            "Responsive form UI"
-        ]
-    }
+  {
+    "id": "project1",
+    "title": "1984.1 – A Satirical Orwellian Microsite",
+    "category": "Web Design",
+    "description": "A darkly humorous multi-page site exploring modern surveillance and civil obedience through a dystopian lens.",
+    "image": "assets/images/1984-1-mockup.webp",
+    "liveDemo": "https://creatvie-introvert.github.io/1984-1/",
+    "sourceCode": "https://github.com/creatvie-introvert/1984-1",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "highlights": [
+      "Multi-page responsive website",
+      "Dark humour theme with satirical content",
+      "Scroll-triggered animations and interactive UI"
+    ]
+  },
+  {
+    "id": "project2",
+    "title": "WordWeaver",
+    "category": "JavaScript / Web App",
+    "description": "WordWeaver is a browser-based crossword game that generates dynamic puzzles from trivia questions across multiple categories and difficulty levels.",
+    "image": "assets/images/wordweaver-mockup.webp",
+    "liveDemo": "https://creatvie-introvert.github.io/wordweaver/",
+    "sourceCode": "https://github.com/creatvie-introvert/wordweaver",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "highlights": [
+      "Dynamic puzzle generation from trivia data",
+      "Interactive crossword grid with category icons",
+      "Responsive design with mobile-first layout"
+    ]
+  },
+  {
+    "id": "project3",
+    "title": "To-Do List",
+    "category": "Web App",
+    "description": "A browser-based task manager that lets users add, mark, and delete tasks in a clean and simple interface for organizing daily activities.",
+    "image": "assets/images/to-do-list.webp",
+    "liveDemo": "https://creatvie-introvert.github.io/todo-list/",
+    "sourceCode": "https://github.com/creatvie-introvert/todo-list",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "highlights": [
+      "Add, mark, and delete daily tasks",
+      "Lightweight browser-based interface",
+      "Simple, clean UI for productivity"
+    ]
+  }
 ]
